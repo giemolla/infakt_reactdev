@@ -18,7 +18,6 @@ const CardsView: React.FC = () => {
       .then((res) => {
         setData((prevData) => prevData.concat(res.data.results));
         setLoading(false);
-        console.log(res);
       })
       .catch((error) => {
         setError(error);
