@@ -8,5 +8,5 @@ type FetchAccountantsFn = (page?: number) => Promise<AxiosAccountantResponse>;
 
 export const fetchAccountants: FetchAccountantsFn = (page: number = 1) =>
   axios.get(
-    `https://randomuser.me/api/?results=4&seed=accountants&page=${page}&inc=cell,name,email,picture,login`
+    `https://randomuser.me/api/?results=4&seed=accountants&page=${page}&inc=cell,name,email,picture,login,gender`
   );
