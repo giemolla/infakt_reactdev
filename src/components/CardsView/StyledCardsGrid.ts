@@ -6,6 +6,7 @@ const StyledCardsGrid = styled.div`
   column-gap: 24px;
   row-gap: 24px;
   margin-bottom: 48px;
+  justify-content: center;
 `;
 
 export default StyledCardsGrid;

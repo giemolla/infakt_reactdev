@@ -9,6 +9,7 @@ export type AccountantType = {
   login: {
     uuid: string;
   };
+  gender: string;
 };
 
 export type AccountantResponseType = {

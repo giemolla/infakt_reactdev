@@ -2,7 +2,7 @@ import { AccountantType } from "../../types/Accountant";
 import Button from "../Button/Button";
 import StyledCard from "./StyledCard";
 
-const Card: React.FC<ICardProps> = ({ data }: any) => {
+const Card: React.FC<ICardProps> = ({ data }: ICardProps) => {
   const title = data.gender === "female" ? "Twoja księgowa" : "Twój księgowy";
   const getFullName = () => {
     return `${data.name.first} ${data.name.last}`;

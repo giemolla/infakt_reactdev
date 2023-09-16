@@ -7,7 +7,7 @@ const HomeView: React.FC = () => {
   return (
     <StyledHomeView>
       <Link to={routes.accountants}>
-        <Button>Zobacz naszych księgowych</Button>
+        <Button className="show-more-btn">Zobacz naszych księgowych</Button>
       </Link>
     </StyledHomeView>
   );

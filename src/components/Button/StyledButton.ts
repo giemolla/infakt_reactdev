@@ -13,7 +13,6 @@ const StyledButton = styled.button`
   cursor: pointer;
 
   &:disabled {
-    background-color: ${({ theme }) => theme.color.grey[200]};
     cursor: not-allowed;
   }
 `;

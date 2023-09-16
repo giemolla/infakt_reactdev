@@ -18,4 +18,12 @@ export const theme = {
       600: "rgb(30, 136, 229)",
     },
   },
+  breakpoints: {
+    xs: "max-width: 720px",
+    s: "min-width: 720px",
+    m: "min-width: 768px",
+    l: "min-width: 992px",
+    xl: "min-width: 1200px",
+    xxl: "min-width: 1368px",
+  },
 };
