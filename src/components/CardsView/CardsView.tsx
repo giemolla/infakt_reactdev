@@ -38,7 +38,7 @@ const CardsView: React.FC = () => {
   };
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return <div>Problem z pobraniem danych.</div>;
   }
 
   return (
