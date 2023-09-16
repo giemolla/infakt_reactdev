@@ -5,7 +5,8 @@ import { fetchAccountants } from "../../api/fetchAccountants";
 import StyledCardsGrid from "./StyledCardsGrid";
 import Card from "../Card/Card";
 import { AccountantType } from "../../types/Accountant";
-import Header from "../Header/Header";
+import { Link } from "react-router-dom";
+import { routes } from "../../routes";
 
 const CardsView: React.FC = () => {
   const [data, setData] = useState<AccountantType[]>([]);
@@ -42,7 +43,11 @@ const CardsView: React.FC = () => {
 
   return (
     <StyledCardsView>
-      <Header />
+      <Link to={routes.home}>
+        <p className="go-back">
+          <span className="arrow-left"></span>powrót
+        </p>
+      </Link>
       <StyledCardsGrid>
         {data && data.map((element, i) => <Card key={i} data={element} />)}
       </StyledCardsGrid>

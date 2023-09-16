@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import StyledHomeView from "./StyledHomeView";
+import { routes } from "../../routes";
 
 const HomeView: React.FC = () => {
   return (
     <StyledHomeView>
-      <Button>Zobacz naszych księgowych</Button>
+      <Link to={routes.accountants}>
+        <Button>Zobacz naszych księgowych</Button>
+      </Link>
     </StyledHomeView>
   );
 };
