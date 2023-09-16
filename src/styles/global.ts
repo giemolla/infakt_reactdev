@@ -18,6 +18,10 @@ export const GlobalStyle = createGlobalStyle<{}>`
     margin: 48px;
   }
 
+  #root {
+    width: 100%;
+  }
+
   img {
     max-width: 100%;
     max-height: 100%;

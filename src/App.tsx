@@ -6,21 +6,24 @@ import CardsView from "./components/CardsView/CardsView";
 import HomeView from "./components/HomeView/HomeView";
 import Header from "./components/Header/Header";
 import { routes } from "./routes";
+import Container from "./components/Container/Container";
 
 function App() {
   return (
     <Router>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Header />
-        <Switch>
-          <Route exact path={routes.home}>
-            <HomeView />
-          </Route>
-          <Route path={routes.accountants}>
-            <CardsView />
-          </Route>
-        </Switch>
+        <Container>
+          <Header />
+          <Switch>
+            <Route exact path={routes.home}>
+              <HomeView />
+            </Route>
+            <Route path={routes.accountants}>
+              <CardsView />
+            </Route>
+          </Switch>
+        </Container>
       </ThemeProvider>
     </Router>
   );

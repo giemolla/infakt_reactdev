@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 const StyledCardsView = styled.div`
   font-size: ${({ theme }) => theme.fontSize.m};
-  max-width: 1272px;
   display: flex;
   flex-direction: column;
 
   .go-back {
     position: absolute;
-    top: 24px;
-    left: 24px;
+    top: 16px;
+    left: 48px;
     font-size: ${({ theme }) => theme.fontSize.s};
     color: ${({ theme }) => theme.color.grey[800]};
     cursor: pointer;
